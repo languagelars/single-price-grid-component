@@ -1,0 +1,85 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+
+  @include mq($med) {
+    grid-template-columns: 1fr;
+  }
+
+  &__heading {
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+    color: #fff;
+
+    &--green {
+      color: $bright-yellow-color;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+    color: #fff;
+
+    &--dark {
+      color: rgba(51, 51, 51, 0.495);
+    }
+
+    &--light {
+      opacity: .3;
+      position: absolute;
+      top: 16px;
+      left: 90px;
+    }
+
+    &--price {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__pricing {
+    position: relative;
+  }
+
+  &__top,
+  &__left,
+  &__right {
+    padding: 3rem;
+
+    @include mq($med) {
+      padding: 2rem;
+    }
+  }
+
+  &__top {
+    background-color: #fff;
+    grid-column: 1 / 3;
+
+    @include mq($med) {
+      grid-column: 1 / 1;
+    }
+
+    &-heading {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: $cyan-color;
+    }
+  }
+
+  &__left {
+    background-color: $cyan-color;
+  }
+
+  &__right {
+    background-color: $cyan-color-light;
+  }
+
+  &__list {
+    li {
+      color: #fff;
+      opacity: .6;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// PRIMARY COLORS
+$cyan-color: hsl(179, 62%, 43%);
+$cyan-color-light: #4ABEBD;
+$bright-yellow-color: hsl(71, 73%, 54%);
+
+// NEUTRAL COLORS
+$light-grey-color: hsl(204, 43%, 93%);
+$grayish-blue-color: hsl(218, 22%, 67%);
+
+// FONT STACK
+$font-stack: 'Karla', sans-serif;
+
+// WEBSITE WIDTH
+$website-width: 1440px;
+
+// BOX SHADOW
+$box-shadow:   
+  0 1.3px 4.3px rgba(0, 0, 0, 0.036),
+  0 4.2px 14.5px rgba(0, 0, 0, 0.054),
+  0 19px 65px rgba(0, 0, 0, 0.09);
+
+// MEDIA QUERY BREAKPOINTS
+$xs: 575px;
+$sm: 576px;
+$med: 768px;
+$lg: 992px;
