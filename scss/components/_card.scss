@@ -43,8 +43,7 @@
 
   &__pricing {
     // position: relative;
-    display: flex;
-    align-items: center;
+    @include flexy($align: center);
   }
 
   &__top,
